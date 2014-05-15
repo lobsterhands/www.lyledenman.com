@@ -1,0 +1,127 @@
+@media screen and (min-width: 100px) and (max-width: 479px) {
+
+  /*****************************
+  PAGE: PORTFOLIO, TWO COLUMN LAYOUT
+  ******************************/
+
+  #gallery li:nth-child(2n+1) {
+    clear: left;
+  }
+
+  nav ul li {
+    margin: 5px 0px 5px;
+    padding: 5px 5px;
+  }
+
+ 
+  nav a, nav a:visited {
+    color: #fff;
+  }
+  
+  nav a.selected, nav a:hover {
+    color: #555;
+  }
+
+  #gallery li h1 {
+    font-size: 1.15em;
+  }
+
+  #overlay img {
+    margin-top: 2%;
+    max-height: 100%;
+  }
+
+}
+
+
+@media screen and (min-width: 480px) and (max-height: 800px) {
+  /*****************************
+  PAGE: ABOUT, TWO COLUMN LAYOUT
+  ******************************/
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  /*****************************
+  PAGE: PORTFOLIO;
+  ******************************/
+  #gallery li {
+    width: 28.3333%;
+  }
+  #gallery li:nth-child(3n+1) {
+    clear: both;
+  }
+  #gallery li h1 {
+    font-size: 1.25em;
+  }
+  /*****************************
+  PAGE: ABOUT
+  ******************************/
+  .profile-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+  
+  nav a, nav a:visited {
+    color: #fff;
+  }
+  
+  nav a.selected, nav a:hover {
+    color: #555;
+  }
+
+  #overlay img {
+    margin-top: 2%;
+    max-height: 100%;
+  }
+
+}
+
+
+@media screen and (min-width: 660px) {
+  /*****************************
+  HEADER
+  ******************************/
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+
+  header {
+    border-bottom: 5px solid #ccc;
+    margin-bottom: 60px;
+  }
+  
+  nav a, nav a:visited {
+    color: #ccc;
+  }
+  nav a.selected, nav a:hover {
+    color: #555;
+  }
+
+
+}

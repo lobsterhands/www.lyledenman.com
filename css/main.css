@@ -1,231 +1,290 @@
-*{
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  padding: 0px;
+/*****************************
+GENERAL
+******************************/
+
+/* site body */
+
+* {
+  outline: 0;
 }
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  min-height: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/*****************************
+HEADING
+******************************/
+/* green header */
+header {
+  width: 100%;
+  float: left;
+  margin: 0 0 30px 0; /* top, right, bottom, left; this keeps the header separated from other content on the bottom and removes problematic margin on the top */
+  padding: 5px 0 0 0; /* we set the padding to separate the text without removing the margin from the top of the page */
+}
+
+#logo {
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+/*****************************
+NAVIGATION
+******************************/
+nav {
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+/*****************************
+PAGE PORTFOLIO
+******************************/
+#gallery {
+  /*overflow: hidden;*/
+  padding-bottom: 120px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 1.5% 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+#gallery li h1 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#gallery li a p {
+  text-align: center;
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
+/*****************************
+PAGE ABOUT
+******************************/
+.profile-photo {
+  display: block;
+  max-width: 18%;
+  min-width: 100px;
+  margin: 0 auto 20px;
+  border-radius: 100%;
+}
+#imageStay {
+  clear: both;
+}
+
+
+
+/*****************************
+PAGE CONTACT
+******************************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  outline: 0;
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/*****************************
+PAGE PHOTO GALLERY
+******************************/
+#photo_gallery {
+  clear: both;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+#photo_gallery ul {
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+#photo_gallery ul li {
+  display: inline-block;
+  padding: 8px;
+  background: #e1e1e1;
+  margin: 10px;
+}
+
+#photo_gallery ul li img {
+  display: block;
+  width: 150px;
+}
+
+
+/*  Photo Gallery Overlay */
+#overlay {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin-top: 125px;
+  max-height: 650px;
+  max-width: 95%;
+}
+
+#overlay p {
+  color: white;
+}
+
+/*****************************
+PAGE GAMES GALLERY
+******************************/
+#gamesGallery h1, #designGallery h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#gamesGallery p, #designGallery p {
+  text-align: center;
+}
+
+/*****************************
+COLORS
+******************************/
 
 body {
-  background-color: #e6e6e6;
+  background-color: #fff;
+  color: #999;
 }
 
-#header{
-z-index: 999;
-background-color:#555555;
-width:100%;
-height:50px;
-box-shadow: 0px 5px 50px #121212;
-position:fixed;
-left: 0px;
-top: 0px;
-text-align: center;
+header {
+  background: #fff;
 }
 
-nav ul{
+/* nav background on mobile */
+nav {
+  background: #ccc;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  outline: 0;
+  color: #ddd;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #555;
+}
+
+h1, h2 {
+  color: #444;
+}
+
+/*****************************
+FOOTER
+******************************/
+
+footer {
+  /*margin-top: -120px;*/
+  clear: both;
+  font-size: 0.75em;
   text-align: center;
-  position: relative;
-  left: 0px;
-  top: 12.5px;
-  margin: 0px;
-  width: 100%;
-  z-index: 10000;
-  cursor: default;
+  padding-top: 50px;
+  color: #ccc;
 }
 
-nav ul li {
-  display: inline;
-  margin: 30px;
-  background-color: #555555;
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
-nav ul li a {
-  font-size: .9em;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
 
-/* #TOP */
-
-#top {
-  border-bottom: 1px inset black;
-  padding-bottom: 25px;
-}
-
-.row {
-  width:960px;
-}
-
-.profile_pic img {
-  float:left; 
-  display:inline;
-  height: 200px;
-  border-radius: 25%;
-  overflow: hidden;
-  margin-top: 35px;
-  margin-right: 28px; /* "centers" the stuff to the right of it */
-}
-
-.about_me {
-  margin-top: 50px;
-  margin-left:10px;
-}
-
-.container {
-  margin: auto;
-  overflow: hidden;
-}
-
-.containerIntro{
-  width:960px;
-  margin: auto;
-}
-
-.intro {
-  width:960px;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 5px;
-}
-
-.intro h1 {
-  width:748px;
-  font-size: 3.0em;
-  font-weight: normal;
-  text-align: center;
-}
-
-.intro p {
-  width:748px;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  margin: 0px;
-  text-align: center;
-}
-
-.button {
-    margin-left:94px;
-    width: 180px;
-    background: #312730;
-    border: 0 none;
-    border-radius: 15px;
-    box-shadow: 0 0 0 1px #135C86 inset, 0 2px 1px 0 rgba(255, 255, 255, 0.75) inset;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    outline: 0 none;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-    font-size: 1.1em;
-    padding: 1em 2.35em;
-    z-index: 1;
-}
-
-.button-big {
-  margin-top: 25px;
-  margin-bottom: 0px;
-  font-size: 1.5em;
-  letter-spacing: -0.025em;
-}
-
-/* #skills */
-#skills {
-  margin-top: -50px;
-  padding-top: 70px;
-  border-bottom: 1px inset black;
-  padding-bottom: 0px;
-}
-
-.skills {
-  width: 998px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skills div {
-  text-align: center;
-  display: inline-block;
-  margin-left: 29px;
-  margin-right: auto;
-}
-
-.skills h2 {
-  text-align: center;
-}
-
-.skills p {
-  text-align: center;
-}
-
-/* #portfolio */
-
-#portfolio{
-  margin-top: -50px;
-  padding-top: 70px;
-  border-bottom: 1px inset black;
-  padding-bottom: 0px;
-}
-
-.portfolio {
-  text-align: center;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio h2 {
-  text-align: center;
-
-}
-
-.portfolio p {
-  text-align: center;
-}
-
-/* #contact */
-
-#contact{
-  margin-top: -50px;
-  padding-top: 70px;
-  border-bottom: 1px inset black;
-  padding-bottom: 0px;
-}
-
-.contact {
-  text-align: center;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contact h2 {
-  text-align: center;
-}
-
-.contact p {
-  text-align: center;
-}
-
-#main_section{
-  /*border: 4px solid green;*/
-  height: 100px;
-  padding-top: 20px;
-  padding-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footer{ /* this is not set to properly stick to the bottom */
-  clear: right;
-  height: 15px;
-  font-size: 10px;
-  text-align: center;
-  width: 100%;
-}
-
-#h1{
-  color: white;
-}
 
 
 

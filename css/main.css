@@ -241,12 +241,6 @@ PAGE GAMES GALLERY
 /*****************************
 PAGE GUESSING GAME
 ******************************/
-.guessinggame h1 {
-  color: #555;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .games h2 {
   color: #777;
   font-size: 1.8em;
@@ -258,6 +252,11 @@ PAGE ROY GAME
   margin: 0;
 }
 
+.hCenter h1 {
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 /*****************************
 COLORS

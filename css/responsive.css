@@ -34,7 +34,7 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-height: 800px) {
+@media screen and (min-width: 480px) {
   /*****************************
   PAGE: ABOUT, TWO COLUMN LAYOUT
   ******************************/
@@ -49,9 +49,6 @@
   /*****************************
   PAGE: PORTFOLIO;
   ******************************/
-  #gallery li {
-    width: 28.3333%;
-  }
   #gallery li:nth-child(3n+1) {
     clear: both;
   }
@@ -122,6 +119,5 @@
   nav a.selected, nav a:hover {
     color: #555;
   }
-
 
 }
